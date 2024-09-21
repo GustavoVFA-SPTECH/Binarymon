@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Links -->
-  <link rel="icon" href="./favicons/favicon-16x16.png">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="icon" href="images/favicon.png">
-  
-  <!-- Main JS -->
+    <!-- Links -->
+    <link rel="icon" href="./favicons/favicon-16x16.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="images/favicon.png" />
 
-  <script defer src="script.js"></script>
-  
-  <title>Binarydex</title>
-</head>
-<body>
-    
+    <!-- Main JS -->
+
+    <script defer src="script.js"></script>
+
+    <title>Binarydex</title>
+  </head>
+  <body>
     <main>
-        <div class="titulo">
-            <h1>Binarydex</h1>
-        </div>
-        <div class="inputs">
-            <input class="numeros" type="text" readonly placeholder="Binario" id="binario" style="border: red 1px solid">
-            <input class="numeros" type="text" readonly placeholder="Octal" id="octal">
-            <input class="numeros" type="text" readonly placeholder="Decimal" id="decimal">
-            <input class="numeros" type="text" readonly placeholder="Hexadecimal" id="hexadecimal">
-        </div>
-        <div class="button-pcs">
-            <button onclick="limpar()" class="button-pc">Limpar</button>
-            <button class="button-pc">Pc</button>
-        </div>
-
-    <form class="form">
-    </form>
-    
-    <div class="buttons">
-        <button value="1" class="button">1</button>
-      <button value="2" class="button">2</button>
-      <button value="3" class="button">3</button>
-      <button value="A" class="button">A</button>
-      <button value="B" class="button">B</button>
-      <button value="C" class="button">C</button>
-      <button value="4" class="button">4</button>
-      <button value="5" class="button">5</button>
-      <button value="6" class="button">6</button>
-      <button value="D" class="button">D</button>
-      <button value="E" class="button">E</button>
-      <button value="F" class="button">F</button>
-      <button value="7" class="button">7</button>
-      <button value="8" class="button">8</button>
-      <button value="9" class="button">9</button>
-      <button value="0" class="button">0</button>
-      <button onclick="converter()" class="button-confirm">Ok</button>
-      <button class="button-delete">&#9003;</button>
-      <button onclick="descer()" class="button-arrow">&uarr;</button>
-      <button onclick="subir()" class="button-arrow">&darr;</button>
+      <div class="titulo">
+        <h1>Binarydex</h1>
+      </div>
+      <div class="inputs">
+        <input
+          class="numeros"
+          type="text"
+          readonly
+          placeholder="Binario"
+          id="binario"
+          style="border: red 1px solid"
+        />
+        <div class="bolinha bolinha1"></div>
+        <input
+        class="numeros"
+        type="text"
+        readonly
+        placeholder="Octal"
+        id="octal"
+        />
+        <div class="bolinha bolinha2"></div>
+        <input
+        class="numeros"
+        type="text"
+        readonly
+        placeholder="Decimal"
+        id="decimal"
+        />
+        <div class="bolinha bolinha3"></div>
+        <input
+        class="numeros"
+        type="text"
+        readonly
+        placeholder="Hexadecimal"
+        id="hexadecimal"
+        />
+        <div class="bolinha bolinha4"></div>
     </div>
+    <div class="button-pcs">
+        <button onclick="limpar()" class="button-pc">Limpar</button>
+        <button class="button-pc">Pc</button>
+      </div>
 
-    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
-  </main>
+      <form class="form"></form>
 
-</body>
+      <div class="buttons">
+        <button value="1" class="button">1</button>
+        <button value="2" class="button">2</button>
+        <button value="3" class="button">3</button>
+        <button value="A" class="button">A</button>
+        <button value="B" class="button">B</button>
+        <button value="C" class="button">C</button>
+        <button value="4" class="button">4</button>
+        <button value="5" class="button">5</button>
+        <button value="6" class="button">6</button>
+        <button value="D" class="button">D</button>
+        <button value="E" class="button">E</button>
+        <button value="F" class="button">F</button>
+        <button value="7" class="button">7</button>
+        <button value="8" class="button">8</button>
+        <button value="9" class="button">9</button>
+        <button value="0" class="button">0</button>
+        <button onclick="converter()" class="button-confirm">Ok</button>
+        <button class="button-delete">&#9003;</button>
+        <button onclick="descer()" class="button-arrow">&uarr;</button>
+        <button onclick="subir()" class="button-arrow">&darr;</button>
+      </div>
+
+      <img src="./images/pokedex.png" alt="pokedex" class="pokedex" />
+    </main>
+  </body>
 </html>

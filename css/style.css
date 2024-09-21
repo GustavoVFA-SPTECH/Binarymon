@@ -104,7 +104,7 @@ main {
   background-color: #444;
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
-.button-pc{
+.button-pc {
   width: 35%;
   padding: 1%;
   border: 2px solid #000;
@@ -139,22 +139,24 @@ main {
 .inputs {
   position: absolute;
   bottom: 50%;
-  left: 61.5%;
+  left: 53%;
+  align-items: center;
   width: 70%;
   height: 20%;
   transform: translate(-57%, 0);
   display: flex;
   gap: 5px;
+  /* border: solid black 1px; */
   flex-direction: column;
 }
 
 .numeros {
   color: black;
-  background-color: #E3E3E3;
+  background-color: #e3e3e3;
   width: 70%;
   height: 24%;
   padding: 5px;
-  box-shadow: #4d5050 -3px 3px ;
+  box-shadow: #4d5050 -3px 3px;
   border-radius: 8px 8px;
 }
 
@@ -169,4 +171,28 @@ main {
   display: flex;
   gap: 5px;
   flex-direction: column;
+}
+
+.bolinha {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 8%;
+  border-radius: 50%;
+  background-image: url('../images/favicon.png');
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.bolinha1 {
+  top: 12%;
+}
+.bolinha2 {
+  top: 39%;
+}
+.bolinha3 {
+  top: 67%;
+}
+.bolinha4 {
+  top: 95%;
 }

@@ -11,7 +11,8 @@
 
     <!-- Main JS -->
 
-    <script defer src="script.js"></script>
+    <script defer src="js/binaryDex.js"></script>
+    <script defer src="js/buttonSounds.js"></script>
 
     <title>Binarydex</title>
   </head>
@@ -31,31 +32,32 @@
         />
         <div class="bolinha bolinha1"></div>
         <input
-        class="numeros"
-        type="text"
-        readonly
-        placeholder="Octal"
-        id="octal"
+          class="numeros"
+          type="text"
+          readonly
+          placeholder="Octal"
+          id="octal"
         />
         <div class="bolinha bolinha2"></div>
         <input
-        class="numeros"
-        type="text"
-        readonly
-        placeholder="Decimal"
-        id="decimal"
+          class="numeros"
+          type="text"
+          readonly
+          placeholder="Decimal"
+          id="decimal"
         />
         <div class="bolinha bolinha3"></div>
         <input
-        class="numeros"
-        type="text"
-        readonly
-        placeholder="Hexadecimal"
-        id="hexadecimal"
+          class="numeros"
+          type="text"
+          readonly
+          placeholder="Hexadecimal"
+          id="hexadecimal"
         />
         <div class="bolinha bolinha4"></div>
-    </div>
-    <div class="button-pcs">
+      </div>
+      <div class="button-pcs">
+        <button onclick="musica()" class="button-music">🔈</button>
         <button onclick="limpar()" class="button-pc">Limpar</button>
         <button class="button-pc">Pc</button>
       </div>

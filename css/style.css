@@ -105,7 +105,18 @@ main {
   box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
 .button-pc {
-  width: 35%;
+  width: 30%;
+  padding: 1%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+.button-music {
+  width: 17%;
   padding: 1%;
   border: 2px solid #000;
   border-radius: 5px;
@@ -131,7 +142,8 @@ main {
 .button-arrow:active,
 .button-delete:active,
 .button-confirm:active,
-.button-pc:active {
+.button-pc:active,
+.button-music:active {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
 }
@@ -189,10 +201,13 @@ main {
 }
 .bolinha2 {
   top: 39%;
+  display: none;
 }
 .bolinha3 {
-  top: 67%;
+  top: 64%;
+  display: none;
 }
 .bolinha4 {
-  top: 95%;
+  top: 91%;
+  display: none;
 }

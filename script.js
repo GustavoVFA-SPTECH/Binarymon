@@ -1,16 +1,16 @@
-function entrada() {
-  let binario = document.getElementById("binario").value;
-  let octal = document.getElementById("octal").value;
-  let decimal = document.getElementById("decimal").value;
-  let hexadecimal = document.getElementById("hexadecimal").value;
+// function entrada() {
+//   let binario = document.getElementById("binario").value;
+//   let octal = document.getElementById("octal").value;
+//   let decimal = document.getElementById("decimal").value;
+//   let hexadecimal = document.getElementById("hexadecimal").value;
 
-  return {
-    binario,
-    octal,
-    decimal,
-    hexadecimal,
-  };
-}
+//   return {
+//     binario,
+//     octal,
+//     decimal,
+//     hexadecimal,
+//   };
+// }
 
 let contador = 0;
 function subir() {
@@ -81,6 +81,30 @@ function apagar() {
   inputs[contador].value = arrayInput.toString().replace(/,/g, "");
 }
 
-function calcular(){
+function converter() {
+    let base = 10;
+
+    if(contador == 0)base = 2;
+    else if(contador == 1) base = 8;
+    else if(contador == 3) base = 16;
     
+    const inputs = document.querySelectorAll(".numeros");
+
+    const numero = inputs[contador].value;
+    const decimal = parseInt(numero, base);
+
+    const octal = decimal.toString(8);
+    const hexadecimal = decimal.toString(16);
+    const binario = decimal.toString(2)
+
+    console.log(decimal);
+    console.log(numero);
+    console.log(contador);
+    console.log(inputs)
+
+    document.getElementById("octal").value = octal;
+    document.getElementById("decimal").value = decimal;
+    document.getElementById("hexadecimal").value = hexadecimal;
+    document.getElementById("binario").value = binario;
+
 }

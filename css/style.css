@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap");
+@import url("/fonts/Pokemon\ Solid.ttf");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oxanium", cursive;
+  font-family: "Pokemon", cursive;
 }
 
 body {
@@ -91,8 +91,6 @@ main {
   justify-content: end;
 }
 
-
-
 .button,
 .button-confirm,
 .button-delete {
@@ -140,16 +138,35 @@ main {
 
 .inputs {
   position: absolute;
-  bottom: 52%;
-  left: 67%;
+  bottom: 50%;
+  left: 61.5%;
   width: 70%;
-  height: 15%;
+  height: 20%;
   transform: translate(-57%, 0);
   display: flex;
-  gap: 1px;
-  flex-wrap: wrap;
+  gap: 5px;
+  flex-direction: column;
 }
 
 .numeros {
   color: black;
+  background-color: #E3E3E3;
+  width: 70%;
+  height: 24%;
+  padding: 5px;
+  box-shadow: #4d5050 -3px 3px ;
+  border-radius: 8px 8px;
+}
+
+.titulo {
+  position: absolute;
+  bottom: 65%;
+  left: 67%;
+  width: 70%;
+  color: white;
+  height: 20%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
 }

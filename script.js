@@ -92,15 +92,9 @@ function converter() {
 
     const numero = inputs[contador].value;
     const decimal = parseInt(numero, base);
-
     const octal = decimal.toString(8);
-    const hexadecimal = decimal.toString(16);
+    const hexadecimal = decimal.toString(16).toUpperCase();
     const binario = decimal.toString(2)
-
-    console.log(decimal);
-    console.log(numero);
-    console.log(contador);
-    console.log(inputs)
 
     document.getElementById("octal").value = octal;
     document.getElementById("decimal").value = decimal;

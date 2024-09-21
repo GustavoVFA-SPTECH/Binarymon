@@ -78,10 +78,36 @@ main {
   flex-wrap: wrap;
 }
 
+.button-pcs {
+  position: absolute;
+  bottom: 40.5%;
+  left: 50%;
+  width: 65%;
+  height: 5%;
+  transform: translate(-57%, 0);
+  display: flex;
+  /* border: solid 1px black; */
+  gap: 5px;
+  justify-content: end;
+}
+
+
+
 .button,
 .button-confirm,
 .button-delete {
   width: 15%;
+  padding: 1%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+.button-pc{
+  width: 35%;
   padding: 1%;
   border: 2px solid #000;
   border-radius: 5px;
@@ -106,7 +132,8 @@ main {
 .button:active,
 .button-arrow:active,
 .button-delete:active,
-.button-confirm:active {
+.button-confirm:active,
+.button-pc:active {
   box-shadow: inset -4px 4px 0 #222;
   font-size: 0.9rem;
 }

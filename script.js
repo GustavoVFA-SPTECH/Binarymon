@@ -100,5 +100,11 @@ function converter() {
     document.getElementById("decimal").value = decimal;
     document.getElementById("hexadecimal").value = hexadecimal;
     document.getElementById("binario").value = binario;
+}
 
+function limpar(){
+    document.getElementById("octal").value = '';
+    document.getElementById("decimal").value = '';
+    document.getElementById("hexadecimal").value = '';
+    document.getElementById("binario").value = '';
 }

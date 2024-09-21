@@ -7,48 +7,51 @@
   <!-- Links -->
   <link rel="icon" href="./favicons/favicon-16x16.png">
   <link rel="stylesheet" href="./css/style.css">
-
+  
   <!-- Main JS -->
-  <script defer src="./js/script.js"></script>
 
+  <script defer src="script.js"></script>
+  
   <title>Pokédex</title>
 </head>
 <body>
-  
-  <main>
-    <div class="inputs">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-        <input type="text">
-    </div>
-    <h1 class="pokemon__data">
-      <span class="pokemon__number"></span> -
-      <span class="pokemon__name"></span>
-    </h1>
+    
+    <main>
+        <div class="inputs">
+            <input class="numeros" type="text" readonly placeholder="Binario" id="binario" style="border: red 1px solid">
+            <input class="numeros" type="text" readonly placeholder="Octal" id="octal">
+            <input class="numeros" type="text" readonly placeholder="Decimal" id="decimal">
+            <input class="numeros" type="text" readonly placeholder="Hexadecimal" id="hexadecimal">
+        </div>
+        <h1 class="pokemon__data">
+            <span class="pokemon__number"></span> -
+            <span class="pokemon__name"></span>
+        </h1>
 
     <form class="form">
     </form>
-
+    
     <div class="buttons">
-      <button class="button btn-prev">1</button>
-      <button class="button btn-prev">2</button>
-      <button class="button btn-prev">3</button>
-      <button class="button btn-prev">A</button>
-      <button class="button btn-prev">B</button>
-      <button class="button btn-prev">C</button>
-      <button class="button btn-prev">4</button>
-      <button class="button btn-prev">5</button>
-      <button class="button btn-prev">6</button>
-      <button class="button btn-prev">D</button>
-      <button class="button btn-prev">E</button>
-      <button class="button btn-prev">F</button>
-      <button class="button btn-prev">7</button>
-      <button class="button btn-prev">8</button>
-      <button class="button btn-prev">9</button>
-      <button class="button btn-prev">0</button>
-      <button class="button btn-prev">Ok</button>
-      <button class="button btn-prev">&#9003;</button>
+        <button value="1" class="button">1</button>
+      <button value="2" class="button">2</button>
+      <button value="3" class="button">3</button>
+      <button value="A" class="button">A</button>
+      <button value="B" class="button">B</button>
+      <button value="C" class="button">C</button>
+      <button value="4" class="button">4</button>
+      <button value="5" class="button">5</button>
+      <button value="6" class="button">6</button>
+      <button value="D" class="button">D</button>
+      <button value="E" class="button">E</button>
+      <button value="F" class="button">F</button>
+      <button value="7" class="button">7</button>
+      <button value="8" class="button">8</button>
+      <button value="9" class="button">9</button>
+      <button value="0" class="button">0</button>
+      <button class="button-confirm">Ok</button>
+      <button class="button-delete">&#9003;</button>
+      <button onclick="descer()" class="button-arrow">&uarr;</button>
+      <button onclick="subir()" class="button-arrow">&darr;</button>
     </div>
 
     <img src="./images/pokedex.png" alt="pokedex" class="pokedex">

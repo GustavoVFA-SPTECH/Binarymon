@@ -1,0 +1,76 @@
+@import url("/fonts/Pokemon\ Hollow.ttf");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Pokemon", cursive;
+}
+
+.moldura {
+  background-image: url(/images/bordaJogo.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 70vw;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.tela {
+  width: 0;
+  height: 0;
+  border: 2px solid white;
+  position: relative;
+  animation: ligarPcHorizontal 1s linear forwards,
+  ligarPcVertical 1.5s linear 1s forwards, sumirBorda 0s linear 2.5s forwards; /* Encadeando as animações */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes ligarPcHorizontal {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 77%;
+  }
+}
+
+@keyframes ligarPcVertical {
+  from {
+    height: 0;
+  }
+  to {
+    height: 70%;
+  }
+}
+
+@keyframes sumirBorda {
+  from {
+    border: 2px solid white;
+  }
+  to {
+    border: 0;
+  }
+}
+
+.titulo{
+    color: white;
+    border: white 1px solid;
+    display: flex;
+    justify-content: center;
+}

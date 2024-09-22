@@ -13,4 +13,4 @@ function buttonSound(){
     let botao = new Audio('../audio/somBotao.mp3');
     botao.volume = 0.5;
     botao.play();
-}
+};

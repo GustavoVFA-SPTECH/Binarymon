@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/telaInicial.css">
+    <script defer src="/js/buttonSounds.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="moldura">
         <div class="tela">
-            <div class="titulo">
-                <h1>Binarymon</h1>
+            <div class="tituloDiv">
+                <h1 class="titulo">Binarymon</h1>
+            </div>
+            <div class="optionsInicial">
+                <div class="linhaOptions">
+                    <div class="bolinha bolinha1"></div><button class="btn-optionsInicial">Iniciar Jogo</button>
+                </div>
+                <div class="linhaOptions">
+                    <div class="bolinha bolinha2"></div><button onclick="musica()" class="btn-optionsInicial">Musica: <span id="SimNao">Não</span></button>
+                </div>
+                <div class="linhaOptions">
+                    <div class="bolinha bolinha3"></div><button class="btn-optionsInicial"><a class="a" href="index.html">Voltar</a></button>
+                </div>
             </div>
         </div>
     </div>

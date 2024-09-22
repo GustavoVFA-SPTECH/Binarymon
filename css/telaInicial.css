@@ -32,13 +32,13 @@ body {
   border: 2px solid white;
   position: relative;
   animation: ligarPcHorizontal 1s linear forwards,
-  ligarPcVertical 1.5s linear 1s forwards, sumirBorda 0s linear 2.5s forwards; /* Encadeando as animações */
+    ligarPcVertical 0.5s linear 1s forwards, sumirBorda 0s linear 2.5s forwards; /* Encadeando as animações */
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-image: url('../images/fundoInicial.jpg');
+  /* justify-content: center; */
+  background-image: url("../images/fundoInicial.jpg");
   background-size: 100% 100%;
 }
 
@@ -48,7 +48,7 @@ body {
     height: 0;
   }
   to {
-    width: 79%;
+    width: 78%;
   }
 }
 
@@ -70,9 +70,94 @@ body {
   }
 }
 
-.titulo{
-    color: white;
-    border: white 1px solid;
-    display: flex;
-    justify-content: center;
+@keyframes aparacerTitulo {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tituloDiv {
+  color: white;
+  /* border: white 1px solid; */
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+  top: 15%;
+}
+
+.titulo {
+  font-size: 5em;
+  opacity: 0;
+  margin: 0;
+  animation: aparacerTitulo 1s linear 2s forwards;
+}
+
+.optionsInicial {
+  display: flex;
+  /* border: white 1px solid; */
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+  height: 50%;
+}
+
+.btn-optionsInicial{
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-shadow: 
+    2px 2px 0px black,  /* Sombra deslocada para baixo à direita */
+    -2px 2px 0px black, /* Sombra deslocada para baixo à esquerda */
+    2px -2px 0px black, /* Sombra deslocada para cima à direita */
+    -2px -2px 0px black,/* Sombra deslocada para cima à esquerda */
+    0px 2px 0px black,  /* Sombra diretamente abaixo */
+    0px -2px 0px black, /* Sombra diretamente acima */
+    2px 0px 0px black,  /* Sombra diretamente à direita */
+    -2px 0px 0px black; /* Sombra diretamente à esquerda */
+  font-size: 2em;
+}
+
+.btn-optionsInicial:hover{
+  text-decoration: underline;
+}
+
+
+.linhaOptions{
+  display: flex;
+  /* border: white 2px solid; */
+  /* width: 100%; */
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bolinha {
+  position: relative;
+  border: black 2px solid;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-image: url('../images/favicon.png');
+  transform: translateY(-50%);
+  right: 2%;
+  top: 18%;
+  display: none;
+}
+
+.linhaOptions:hover .bolinha{
+  display: block;
+}
+
+.a{
+  color: white;
+  text-decoration: none;
 }

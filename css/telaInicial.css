@@ -38,6 +38,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('../images/fundoInicial.jpg');
+  background-size: 100% 100%;
 }
 
 @keyframes ligarPcHorizontal {
@@ -46,7 +48,7 @@ body {
     height: 0;
   }
   to {
-    width: 77%;
+    width: 79%;
   }
 }
 
@@ -55,7 +57,7 @@ body {
     height: 0;
   }
   to {
-    height: 70%;
+    height: 71%;
   }
 }
 

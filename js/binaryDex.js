@@ -1,17 +1,3 @@
-// function entrada() {
-//   let binario = document.getElementById("binario").value;
-//   let octal = document.getElementById("octal").value;
-//   let decimal = document.getElementById("decimal").value;
-//   let hexadecimal = document.getElementById("hexadecimal").value;
-
-//   return {
-//     binario,
-//     octal,
-//     decimal,
-//     hexadecimal,
-//   };
-// }
-
 let contador = 0;
 function subir() {
   const inputs = document.querySelectorAll(".numeros");

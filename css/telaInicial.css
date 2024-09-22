@@ -94,6 +94,15 @@ body {
   opacity: 0;
   margin: 0;
   animation: aparacerTitulo 1s linear 2s forwards;
+  text-shadow: 
+    2px 2px 0px black,  /* Sombra deslocada para baixo à direita */
+    -2px 2px 0px black, /* Sombra deslocada para baixo à esquerda */
+    2px -2px 0px black, /* Sombra deslocada para cima à direita */
+    -2px -2px 0px black,/* Sombra deslocada para cima à esquerda */
+    0px 2px 0px black,  /* Sombra diretamente abaixo */
+    0px -2px 0px black, /* Sombra diretamente acima */
+    2px 0px 0px black,  /* Sombra diretamente à direita */
+    -2px 0px 0px black; /* Sombra diretamente à esquerda */
 }
 
 .optionsInicial {

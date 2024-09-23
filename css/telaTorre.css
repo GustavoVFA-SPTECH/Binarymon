@@ -73,7 +73,7 @@
 .cardEscolhaLevel {
   border: white 2px solid;
   position: absolute;
-  width: 25%;
+  width: 32%;
   height: 50px;
   right: 15%;
   background-color: rgb(75, 72, 72);
@@ -125,4 +125,10 @@
 .bossName{
     font-size: 1.5em;
     color: yellow;
+}
+
+.lutar{
+    font-size: 1.5em;
+    color: yellow;
+    background-color: gray;
 }

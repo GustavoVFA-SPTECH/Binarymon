@@ -1,7 +1,10 @@
 .personagem{
-    border: blue 10px solid;
+    /* border: blue 10px solid; */
+    background-image: url('../images/spritePersonagem.png');
     width: 70px;
     height: 70px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     position: absolute;
     bottom: 0;
 }

@@ -4,11 +4,12 @@ export class Andar {
         this.passo = passo;
         this.left = parseInt(window.getComputedStyle(this.personagem).left) || 0;
         this.top = parseInt(window.getComputedStyle(this.personagem).top) || 0;
-        this.movimento(); // Ativa o movimento ao inicializar
+        // this.movimento(); // Ativa o movimento ao inicializar
     }
 
-    movimento() {
-        document.addEventListener('keydown', (event) => { // Função de seta para manter o contexto de `this`
+    movimento(event) {
+        if(!event) return;
+        
             switch (event.key) {
                 case 'ArrowRight': this.andarDireita(); break;
                 case 'ArrowLeft': this.andarEsquerda(); break;
@@ -16,7 +17,7 @@ export class Andar {
                 case 'ArrowDown': this.andarTras(); break;
             }
             this.atualizarPosicao(); // Atualiza a posição após o movimento
-        });
+
     }
 
     andarDireita() {

@@ -10,7 +10,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  background-image: url("../images/fundoInicial.jpg");
+  background-repeat: no-repeat;
+  background-image: url("../images/fundoTorre.jpg");
   background-size: 100% 100%;
 }
 
@@ -132,3 +133,5 @@
     color: yellow;
     background-color: gray;
 }
+
+

@@ -1,24 +1,26 @@
-class Obstaculos{
-    constructor(){
+export class Obstaculos {
+    constructor() {
         this.obstaculos = document.querySelectorAll(".obstaculo");
-        this.personagem = document.querySelector("personagem")
+        this.personagem = document.querySelector(".personagem");
     }
 
-    colisao(posicao, obstaculo){
-        const personagem = posicao;
-        const solido = obstaculo;
+    colisao(personagem, obstaculo) {
+        const personagemRect = personagem.getBoundingClientRect();
+        const obstaculoRect = obstaculo.getBoundingClientRect();
 
         return !(
-            personagem.top > solido.bottom ||
-            personagem.bottom < solido.top ||
-            personagem.left > solido.right ||
-            personagem.right < solido.left
+            personagemRect.top > obstaculoRect.bottom ||
+            personagemRect.bottom < obstaculoRect.top ||
+            personagemRect.left > obstaculoRect.right ||
+            personagemRect.right < obstaculoRect.left
         );
-        
-    }
-    atualizar(posicao){
-        personagem.style.top = `${top}%`
-        personagem.style.left = `${left}%`
     }
 
+    verificarColisoes() {
+        this.obstaculos.forEach((obstaculo) => {
+            if (this.colisao(this.personagem, obstaculo)) {
+                this.personagem.style.backgroundColor = 'red'; // Indica a colisão mudando a cor
+            }
+        });
+    }
 }

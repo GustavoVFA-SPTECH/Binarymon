@@ -8,8 +8,7 @@ export class Andar {
     }
 
     movimento(event) {
-        if(!event) return;
-        
+
             switch (event.key) {
                 case 'ArrowRight': this.andarDireita(); break;
                 case 'ArrowLeft': this.andarEsquerda(); break;

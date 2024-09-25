@@ -47,13 +47,61 @@
 .reator {
   border: green 1px solid;
   width: 15%;
-  height: 20%;
+  height: 18%;
   position: absolute;
   top: 27%;
   left: 7.5%;
 }
 
-.topo {
+
+.plantaDireita {
+  border: orangered 1px solid;
+  width: 7%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  justify-self: start;
+  left: 0;
+}
+
+.plantaEsquerda {
+  border: orangered 1px solid;
+  width: 7%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  justify-self: end;
+  right: 0;
+}
+
+.Bordabaixo {
+  border: yellow 1px solid;
+  width: 100%;
+  height: .5%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Bordadireita {
+  border: yellow 1px solid;
+  width: 1%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.Bordaesquerda {
+  border: yellow 1px solid;
+  width: 1%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Bordatopo {
   border: yellow 1px solid;
   width: 100%;
   height: 19%;
@@ -61,33 +109,3 @@
   top: 0;
   left: 0;
 }
-
-.plantaDireita {
-    border: orangered 1px solid;
-    width: 7%;
-    height: 15%;
-    position: absolute;
-    bottom: 0;
-    justify-self: start;
-    left: 0;
-}
-
-.plantaEsquerda {
-    border: orangered 1px solid;
-    width: 7%;
-    height: 15%;
-    position: absolute;
-    bottom: 0;
-    justify-self: end;
-    right: 0;
-}
-
-
-.baixo {
-    border: yellow 1px solid;
-    width: 100%;
-    height: 1%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }

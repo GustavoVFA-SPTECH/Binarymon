@@ -16,7 +16,6 @@ export class Andar {
                 case 'ArrowDown': this.andarTras(); break;
             }
             this.atualizarPosicao(); // Atualiza a posição após o movimento
-
     }
 
     andarDireita() {

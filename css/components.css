@@ -1,0 +1,7 @@
+.personagem{
+    border: blue 10px solid;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+}

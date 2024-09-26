@@ -1,0 +1,80 @@
+.personagem {
+  bottom: 10%;
+  left: 25%;
+}
+
+.telaAndar2 {
+  width: 78%;
+  height: 71%;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-image: url("../images/fundoAndar2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Bordabaixo {
+  border: yellow 1px solid;
+  width: 100%;
+  height: 3%;
+}
+
+.Bordadireita {
+  border: yellow 1px solid;
+  width: 1%;
+  height: 100%;
+}
+
+.Bordaesquerda {
+  border: yellow 1px solid;
+  width: 1%;
+  height: 100%;
+}
+
+.Bordatopo {
+  border: yellow 1px solid;
+  width: 100%;
+  height: 19%;
+}
+
+.obstaculo3 {
+  border: red 1px solid;
+  width: 15%;
+  height: 90%;
+  position: absolute;
+  top: 10%;
+  transform: skew(-30deg); /* Inclina a div 20 graus */
+  right: 70%;
+}
+
+.boss {
+  background-image: url("");
+  top: 15%;
+  left: 46%;
+}
+
+.aperte {
+  border: red 2px solid;
+  position: absolute;
+  bottom: 8%;
+  right: 25%;
+}
+
+.obstaculo1{
+    border: blue 1px solid;
+    width: 15%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    transform: skew(-30deg);
+    right: 26%;
+}
+
+.obstaculo2{
+
+}

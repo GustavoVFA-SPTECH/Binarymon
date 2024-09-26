@@ -36,5 +36,17 @@ function telaAndar1(){
   },1000);
 }
 
+function telaAndar2(){
+  const tela = document.getElementById('tela');
+  tela.innerHTML = ``;
+
+  tela.style.animation = "transicaoJogoFechar 2s linear forwards";
+
+  setTimeout(()=>{
+      tela.innerHTML = ``;
+      window.location.replace('telaAndar2.html')
+  },1000);
+}
+
 
 

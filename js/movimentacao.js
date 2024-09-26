@@ -11,22 +11,16 @@ const interacao = new Interacao(personagem, obstaculos);
 
 // Verifica colisões e interação com obstáculos
 document.addEventListener("keydown", (event) => {
-    const ObjColisao = obstaculos.colisao();
+  const ObjColisao = obstaculos.colisao();
 
-    // Verifica movimento com base nas colisões
-    if (ObjColisao.BloquearCima && event.key === "ArrowUp") return;
-    if (ObjColisao.BloquearBaixo && event.key === "ArrowDown") return;
-    if (ObjColisao.BloquearEsquerda && event.key === "ArrowLeft") return;
-    if (ObjColisao.BloquearDireita && event.key === "ArrowRight") return;
+  // Verifica movimento com base nas colisões
+  if (ObjColisao.BloquearCima && event.key === "ArrowUp") return;
+  if (ObjColisao.BloquearBaixo && event.key === "ArrowDown") return;
+  if (ObjColisao.BloquearEsquerda && event.key === "ArrowLeft") return;
+  if (ObjColisao.BloquearDireita && event.key === "ArrowRight") return;
 
-    mover.movimento(event);
+  mover.movimento(event);
 
-    // Verifica se a tecla espaço foi pressionada para interação
-    if (event.key === " ") {
-        // Se houver um obstáculo com o qual o personagem está colidindo
-        if (ObjColisao.obstaculoId) {
-            // Chama a função de interação com base no obstáculo colidido
-            interacao.interagir(ObjColisao.obstaculoId);
-        }
-    }
+  // Chama a função de interação sem depender da tecla espaço
+  interacao.verificarEAtivarInteracao();
 });

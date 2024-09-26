@@ -2,23 +2,39 @@ export class Interacao {
     constructor(personagem, obstaculos) {
         this.personagem = personagem;
         this.obstaculos = obstaculos;
+        this.texto = document.querySelector(".textoAperte");
+        this.classeEspecifica = 'interativo'; // Classe específica dos objetos interativos
     }
 
-    interagir(obstaculoId) {
-        if (!obstaculoId) return;  // Verifica se há um obstáculo com ID
+    verificarColisaoComEspecifico() {
+        const interativos = document.querySelectorAll(`.${this.classeEspecifica}`);
+        const personagemRect = this.personagem.getBoundingClientRect();
 
-        switch (obstaculoId) {
-            case 'interacao':
-                console.log("Interagiu com o obstáculo 1!");
-                // Aqui você pode adicionar a lógica de interação com o obstáculo 1
-                break;
-            case 'obstaculo2':
-                console.log("Interagiu com o obstáculo 2!");
-                // Adiciona lógica para o obstáculo 2
-                break;
-            // Adicione mais cases conforme o número de obstáculos
-            default:
-                console.log("Nenhuma interação definida para esse obstáculo.");
+        // Verifica colisão com objetos que possuem a classe específica 'interativo'
+        for (let obstaculo of interativos) {
+            const obstaculoRect = obstaculo.getBoundingClientRect();
+
+            if (
+                personagemRect.left < obstaculoRect.right &&
+                personagemRect.right > obstaculoRect.left &&
+                personagemRect.top < obstaculoRect.bottom &&
+                personagemRect.bottom > obstaculoRect.top
+            ) {
+                return true; // Houve colisão com um objeto específico
+            }
+        }
+
+        return false; // Não houve colisão
+    }
+
+    verificarEAtivarInteracao() {
+        if (this.verificarColisaoComEspecifico()) {
+            // Ativa a animação quando há colisão
+            this.texto.style.animation = "LoopTexto infinite 2s";
+            console.log("Colisão com objeto específico detectada!");
+        } else {
+            // Remove a animação quando não há colisão
+            this.texto.style.animation = "none";
         }
     }
 }

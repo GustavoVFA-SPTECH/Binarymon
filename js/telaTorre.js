@@ -12,4 +12,29 @@ for (let i = 0; i < andar.length; i++) {
   });
 }
 
+function telaLab(){
+  const tela = document.getElementById('tela');
+  tela.innerHTML = ``;
+
+  tela.style.animation = "transicaoJogoFechar 2s linear forwards";
+
+  setTimeout(()=>{
+      tela.innerHTML = ``;
+      window.location.replace('laboratorio.html')
+  },1000);
+}
+
+function telaAndar1(){
+  const tela = document.getElementById('tela');
+  tela.innerHTML = ``;
+
+  tela.style.animation = "transicaoJogoFechar 2s linear forwards";
+
+  setTimeout(()=>{
+      tela.innerHTML = ``;
+      window.location.replace('telaAndar1.html')
+  },1000);
+}
+
+
 

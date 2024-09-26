@@ -1,0 +1,64 @@
+.personagem {
+  bottom: 45%;
+  right: 1%;
+}
+
+.telaAndar1 {
+  width: 78%;
+  height: 71%;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-image: url("../images/fundoAndar1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Bordabaixo {
+  border: yellow 1px solid;
+  width: 100%;
+  height: 3%;
+}
+
+.Bordadireita {
+  border: yellow 1px solid;
+  width: 1%;
+  height: 100%;
+}
+
+.Bordaesquerda {
+  border: yellow 1px solid;
+  width: 1%;
+  height: 100%;
+}
+
+.Bordatopo {
+  border: yellow 1px solid;
+  width: 100%;
+  height: 19%;
+}
+
+.casa {
+  border: red 1px solid;
+  width: 37%;
+  height: 30%;
+  position: relative;
+  top: 10%;
+  right: 22%;
+}
+
+.boss {
+  background-image: url("");
+  top: 29%;
+  left: 15%;
+}
+
+.aperte {
+  border: red 2px solid;
+  position: absolute;
+  bottom: 3%;
+}

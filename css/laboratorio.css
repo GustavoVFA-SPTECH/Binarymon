@@ -3,8 +3,6 @@
   height: 71%;
   border: 2px solid white;
   position: relative;
-  /* animation: ligarPcHorizontal 1s linear forwards,
-      ligarPcVertical 0.5s linear 1s forwards, sumirBorda 0s linear 2.5s forwards; Encadeando as animações */
   overflow: hidden;
   display: flex;
   flex-direction: column;

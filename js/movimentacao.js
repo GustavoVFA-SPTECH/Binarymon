@@ -22,5 +22,6 @@ document.addEventListener("keydown", (event) => {
   mover.movimento(event);
 
   // Chama a função de interação sem depender da tecla espaço
+
   interacao.verificarEAtivarInteracao();
 });

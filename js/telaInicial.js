@@ -1,12 +1,12 @@
 function comecar(){
     const tela = document.getElementById('tela');
-    tela.innerHTML = '';
+    tela.innerHTML = ``;
 
-    tela.style.animation = "transicaoJogo 2s linear forwards";
+    tela.style.animation = "transicaoJogoFechar 2s linear forwards";
 
     setTimeout(()=>{
-        tela.innerHTML = '';
-        tela.style.backgroundImage = 'url(../images/fundoTorre.jpg)'
+        tela.innerHTML = ``;
+        window.location.replace('telaTorre.html')
     },1000);
 }
 

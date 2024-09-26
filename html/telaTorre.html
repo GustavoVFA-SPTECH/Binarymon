@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/telaInicial.css">
     <link rel="stylesheet" href="/css/telaTorre.css">
+    <link rel="stylesheet" href="/css/components.css">
     <script defer src="/js/buttonSounds.js"></script>
     <script defer src="/js/telaInicial.js"></script>
     <script defer src="/js/telaTorre.js"></script>
@@ -13,14 +14,11 @@
 <body>
     <div class="moldura">
         <div class="telaTorre" id="tela">
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel8"><button class="lutar">⚔</button><span class="bossName">Boss: Marise's Machine</span></div>
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel7"><button class="lutar">⚔</button><span class="bossName">Boss: Matheus's Table</span></div>
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel6"><button class="lutar">⚔</button><span class="bossName">Boss: Giovanni</span></div>
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel5"><button class="lutar">⚔</button><span class="bossName">Boss: Bryan</span></div>
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel4"><button class="lutar">⚔</button><span class="bossName">Boss: Equipe Rocket</span></div>
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel3"><button class="lutar">⚔</button><span class="bossName">Boss: S.E</span></div>
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel2"><button class="lutar">⚔</button><span class="bossName">Treino</span></div>
-            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel1"><button class="lutar">🚪</button><span class="bossName">Lab. Prof. Kaar Alho</span></div>
+            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel5"><button onclick="telaAndarFinal()" class="lutar">⚔</button><span class="bossName">Boss: Marise's Machine</span></div>
+            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel4"><button onclick="telaAndar3()" class="lutar">⚔</button><span class="bossName">Boss: Matheus's Table</span></div>
+            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel3"><button onclick="telaAndar2()" class="lutar">⚔</button><span class="bossName">Boss: Bryan</span></div>
+            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel2"><button onclick="telaAndar1()" class="lutar">⚔</button><span class="bossName">Treino</span></div>
+            <div class="andar"><img src="../images/iconBossProv.png" alt="" class="iconBoss"></div><div class="cardEscolhaLevel cardEscolhaLevel1"><button onclick="telaLab()" class="lutar">🚪</button><span class="bossName">Lab. Prof. Kaar Alho</span></div>
             <div class="andar andarPortao"><div class="portao"></div></div>
             <div class="andar andarBase"></div>
         </div>

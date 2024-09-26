@@ -55,33 +55,65 @@
   position: absolute;
 }
 
-.aperte{
-    width: 250px;
-    height: 30px;
-    border: red 2px solid;
-    position: absolute;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: flex;
-    bottom: 0;
-    justify-content: center;
+.aperte {
+  width: 250px;
+  height: 30px;
+  border: red 2px solid;
+  position: absolute;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
 }
 
-.textoAperte{
-    color: black;
-    font-size: 1.5em;
-    text-align: center;
-    text-decoration: underline;
-    opacity: 0;
-    /* animation: LoopTexto infinite 2s; */
+.textoAperte {
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: underline;
+  opacity: 0;
+  /* animation: LoopTexto infinite 2s; */
 }
 
 @keyframes LoopTexto {
-    from{
-        opacity: 0;
-    }50%{
-        opacity: 1;
-    }to{
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes transicaoJogoFechar {
+  from {
+    border-radius: 0;
+    width: 78%;
+    height: 71%;
+  }
+  25% {
+    border-radius: 100%;
+  }
+  50% {
+    width: 0%;
+    height: 0%;
+  }
+}
+
+@keyframes transicaoJogoAbrir {
+  from {
+    width: 0%;
+    height: 0%;
+  }
+  25% {
+    border-radius: 100%;
+  }
+  50% {
+    border-radius: 0;
+    width: 78%;
+    height: 71%;
+  }
 }
